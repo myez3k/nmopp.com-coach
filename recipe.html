@@ -1,0 +1,255 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Author -->
+<meta name="author" content="OG Web Solutions">
+<!-- Description -->
+<meta name="description" content="Working Space">
+<!-- Favicon -->
+<link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+<!-- Page Title -->
+<title>Working Space | Home</title>
+<!--// Bootstrap \\-->
+<link rel="stylesheet" href="assets/plugins/bootstrap/bootstrap.min.css">
+<!--// Stylesheet \\-->
+<link rel="stylesheet" href="assets/css/style.css">
+	
+	
+	
+	<style>
+		*, *:before, *:after {
+  box-sizing: border-box;
+  transition: all 0.5s ease;
+}
+
+body {
+  background: linear-gradient(to left, #FF5F6D , #FFC371);
+  font-family: sans-serif;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+#container {
+  width: 100%;
+  max-width: 400px;
+  background: white;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#container.closed header { cursor: pointer; }
+header { cursor: pointer; }
+
+.header {
+  width: 100%;
+  height: 250px;
+  background: center / cover;
+  background-image: url(https://3.bp.blogspot.com/-v7vHC8w2AKs/TbbD-X8BhTI/AAAAAAAAAJ4/LCcrwIaMgf0/s1600/Mint+Julep+glass+tools.jpg);
+}
+
+.title {
+  position: relative;
+  z-index: 1;
+  font-size: 2rem;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 0px;
+}
+
+#container.closed .title {
+  padding: 40px 20px 10px 20px;
+  margin-top: -87px;
+  color: white;
+  border: none;
+}
+
+.title:before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+  opacity: 0;
+}
+
+#container.closed .title:before {
+  opacity: 1;
+}
+
+article {
+  padding: 25px 30px;
+  overflow: hidden;
+  max-height: 400px;
+} 
+
+#container.closed article {
+  max-height: 0px;
+  padding: 0 30px;
+}
+
+.ingredients {
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 20px;
+  padding-left: 4px;
+  font-size: 0.9rem;
+}
+
+.ingredients > li {
+  list-style-type: none;
+  display: flex;
+  margin: 4px 0px;
+}
+
+.ingredients > li > .amount {
+  width: 80px;
+  color: #1976D2;
+}
+
+.preperation > div {
+  margin-bottom: 10px;
+}
+	
+	</style>
+	
+	
+	<script>
+function byID(id) {
+  return document.getElementById(id);
+}
+
+byID("toggle").onclick = function () {
+  if (byID("container").classList.contains("closed")) {
+    byID("container").classList.remove("closed");
+  } else {
+    byID("container").classList.add("closed");
+  }
+};
+
+		
+</script>
+	
+	
+	
+</head>
+
+<body>
+    
+<!-- Main -->
+	
+<div class="closed" id="container">
+  <header id="toggle">
+    <div class="header"></div>
+    <div class="title">Mint Julip</div>
+  </header>
+  <article>
+    <ul class="ingredients">
+      <li> 
+        <div class="amount">50ml</div>
+        <div class="ingredient">Rum</div>
+      </li>
+      <li> 
+        <div class="amount">2tsp</div>
+        <div class="ingredient">Sugar</div>
+      </li>
+      <li> 
+        <div class="amount">4 sprigs</div>
+        <div class="ingredient">Mint</div>
+      </li>
+      <li> 
+        <div class="amount">dash</div>
+        <div class="ingredient">Soda water (optional)</div>
+      </li>
+    </ul>
+    <div class="preperation"> 
+      <div>Add the mint sprigs, caster sugar and a couple of tablespoons of crushed ice. </div>
+      <div>Begin 'massaging' the mix together with a spoon. The caster sugar helps to bring out the flavour of the mint. Breaking or crushing the mint makes the taste sour, hence the need to gently fold and stir. </div>
+      <div>Add 25ml of rum, more crushed ice and continue 'massaging'. Fill with ice, pour in the second 25ml shot of rum and add a dash of soda, if desired.</div>
+    </div>
+  </article>
+</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	    <!--\\ CTA Section //-->
+    <section class="cta commonSection">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col">
+                    <h2 class="common-title  fw-bold pt-30">Attend Us In Our Workstation</h2>
+                    <p class="pt-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dolore, alias, numquam enim ab voluptate id quam harum ducimus</p>
+                    <a href="upsell.html" class="btn btn-default">Take Membership</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--\\ CTA Section //-->
+    <!--// Footer \\-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="inner-container text-center">
+                        <div class="footerLogo">
+                            <a href="index.html"> <img src="assets/img/logo.svg" alt="Logo"></a>
+                        </div>
+                        <ul class="list-inline">
+                            <!-- Privacy Policy and Terms and conditions -->
+                            <li class="list-inline-item"><a href="privacy-policy.html">Privacy Policy</a></li>
+                            <li class="list-inline-item"><a href="terms-and-conditions.html">Terms & Conditions</a></li>
+                        </ul>
+                        <!-- Copyright Text -->
+                        <p>© Copyright <span id="copyright_year"></span> YourBrand.com-All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--\\ Footer //-->
+	
+	
+	
+	<!--// Font Awesome \\-->
+<script src="assets/plugins/font-awesome/all.min.js"></script>
+<!-- / Fancybox / -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+<script>
+  // Customization example
+  Fancybox.bind('[data-fancybox="gallery"]', {
+    infinite: false
+  });
+</script>
+<!--// Main JS \\-->
+<script src="assets/js/main.js"></script>
+</body>
+
+</html>
+	
+	
+	
+	
+	
+	
